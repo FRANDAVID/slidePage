@@ -1,0 +1,110 @@
+body, html{
+	padding: 0;
+	margin: 0;
+}
+
+.initBody {
+	height:100%;
+	overflow:hidden;
+	position: relative;
+	z-index:100;
+}
+
+a{
+	text-decoration: none;
+}
+
+.wrapper{
+	overflow: hidden;
+}
+
+.slide-page{
+	position: relative;
+	font-size: 0;
+}
+
+.slide-page .slide-page-item{
+	font-size: 14px;
+}
+
+.vertical-page{
+	position: fixed;
+	top: 50%;
+	left: 20px;
+	list-style: none;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0;
+}
+
+.vertical-page li{
+	padding: 2px;
+}
+
+.vertical-page li .dot{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #333;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.vertical-page li.page-active .dot{
+	background-color: #333;
+}
+
+.vertical-page li span{
+	display: none;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.horizontal-page{
+	position: fixed;
+	left: 50%;
+	bottom: 20px;
+	list-style: none;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0;
+}
+
+.horizontal-page li{
+	display: inline-block;
+	padding: 0 12px;
+}
+
+.horizontal-page li a{
+	position: relative;
+}
+
+.horizontal-page li .dot{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #333;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.horizontal-page li.page-active .dot{
+	background-color: #333;
+}
+
+.horizontal-page li span{
+	position: absolute;
+	display: none;
+	width: 100px;
+	bottom: 20px;
+	left: -42px;
+	white-space: nowrap;
+	text-align: center;
+	font-size: 14px;
+	color: #FFFFFF;
+}

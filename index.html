@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/slidePage.css" />
+		<script type="text/javascript" src="jquery-2.2.3.min.js" ></script>
+		<style>
+			.my-page-1{
+				background-color: blue;
+			}
+			.my-page-2{
+				background-color: green;
+			}
+			.my-page-3{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="slide-page">
+			<div class="slide-page-item my-page-1">视图一</div>
+			<div class="slide-page-item my-page-2">视图二</div>
+			<div class="slide-page-item my-page-3">视图三</div>
+		</div>
+		<script type="text/javascript" src="jquery.slidePage.js" ></script>
+		<script>
+			$(".slide-page").slidePage({
+				menu: ['我的主页','sadasd','3']
+			});
+		</script>
+	</body>
+</html>
